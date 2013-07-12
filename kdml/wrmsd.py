@@ -1,6 +1,6 @@
 from msmbuilder import metrics
 import numpy as np
-from roberttools import _WRMSD
+from kdml import _WRMSD
 
 class WRMSD(metrics.RMSD):
     """

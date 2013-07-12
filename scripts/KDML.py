@@ -9,7 +9,6 @@ from msmbuilder.arglib import add_argument, die_if_path_exists
 from msmbuilder import Project, io, metrics
 from kdml import triplets, lmmdm
 from kdml.wrmsd import WRMSD
-import toy_systems
 
 def main():
     parser = ArgumentParser(os.path.split(__file__)[1], description='''
