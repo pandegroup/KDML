@@ -113,7 +113,7 @@ def main_extract(args):
     die_if_path_exists(args.output)
 
     if args.extract_method == 'rmsd':
-        atomindices = np.loadtxt(args.atomindices, dtype=int)
+        atomindices = np.loadtxt(args.indices, dtype=int)
         AtoB, AtoC = triplets.extract_rmsd(project, close, stride, atomindices, far)
 
     elif args.extract_method == 'dihedral':
